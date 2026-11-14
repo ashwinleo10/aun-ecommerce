@@ -4,7 +4,7 @@ A unisex clothing e-commerce platform built with **React** and **Spring Boot**, 
 
 ## Live Demo
 
-**Live:** https://aun-frontend.vercel.app/
+https://aun-frontend.vercel.app/
 
 ---
 
