@@ -80,9 +80,6 @@ The application follows a full-stack architecture with a React frontend communic
 - Protected customer routes
 - Protected admin routes
 - CORS configuration
-- Environment-based secrets
-- Razorpay secret keys kept on the backend
-
 ---
 
 ## Tech Stack
@@ -110,20 +107,6 @@ The application follows a full-stack architecture with a React frontend communic
 
 - MySQL
 
-### Authentication
-
-- JWT
-- HttpOnly Cookies
-- Role-Based Access Control
-
-### Payments
-
-- Razorpay
-
-### Image Storage
-
-- Cloudinary
-
 ### Deployment
 
 - Vercel — Frontend
@@ -138,40 +121,5 @@ The application follows a full-stack architecture with a React frontend communic
 
 ---
 
-## System Architecture
 
-```text
-                    ┌──────────────────────┐
-                    │       Customer       │
-                    │      /   Admin       │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │    React Frontend    │
-                    │       Vite           │
-                    │      Vercel          │
-                    └──────────┬───────────┘
-                               │
-                        REST API / HTTP
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │   Spring Boot API    │
-                    │   Spring Security    │
-                    │        JWT           │
-                    │       Render         │
-                    └───────┬───────┬──────┘
-                            │       │
-                 ┌──────────┘       └──────────┐
-                 ▼                             ▼
-        ┌────────────────┐            ┌────────────────┐
-        │     MySQL      │            │    Razorpay    │
-        │    Database    │            │    Payments    │
-        └────────────────┘            └────────────────┘
-                                               │
-                                               ▼
-                                      ┌────────────────┐
-                                      │   Cloudinary    │
-                                      │ Product Images  │
                                       └────────────────┘
