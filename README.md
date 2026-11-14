@@ -71,17 +71,6 @@ The application follows a full-stack architecture with a React frontend communic
 - COD payment workflow
 - Stock restoration for eligible cancelled orders
 
-### Security
-
-- JWT authentication
-- HttpOnly authentication cookies
-- Password hashing
-- Role-based authorization
-- Protected customer routes
-- Protected admin routes
-- CORS configuration
----
-
 ## Tech Stack
 
 ### Frontend
@@ -118,8 +107,4 @@ The application follows a full-stack architecture with a React frontend communic
 - GitHub
 - VS Code
 - Eclipse (SpringTools)
-
 ---
-
-
-                                      └────────────────┘
